@@ -2,17 +2,15 @@
 
 ## Project Overview
 
-Customer churn is one of the biggest challenges faced by subscription-based businesses. Retaining existing customers is generally more cost-effective than acquiring new ones, making churn prediction an important business problem.
+Churn is among the major problems that confront subscription-oriented companies. Customer retention tends to be less costly compared to customer acquisition. Churn prediction can thus be considered a critical problem within the business world.
 
-This project develops a machine learning model to predict whether a telecommunications customer is likely to churn based on customer demographics, service subscriptions, contract details, and billing information. The project follows the complete data science workflow, from data preprocessing and exploratory data analysis (EDA) to model development, evaluation, and business recommendations.
+In this project, we design a machine learning model aimed at predicting the probability of churn of a telecommunications customer through various factors such as demographics of the customer, subscriptions, contracts, and billing. The entire process of data science will be covered, including data preprocessing and exploratory data analysis (EDA).
 
----
 
 ## Business Problem
 
-The objective is to identify customers who are likely to discontinue their services so that the company can implement targeted customer retention strategies.
+The main objective of this project is to identify customers who are likely to discontinue their services so that the company can implement targeted customer retention strategies.
 
----
 
 ## Dataset
 
@@ -32,34 +30,6 @@ Target Variable:
 
   * 0 = Customer stayed
   * 1 = Customer churned
-
----
-
-## Project Workflow
-
-1. Data loading
-2. Data cleaning
-3. Exploratory Data Analysis (EDA)
-4. Feature engineering
-5. Categorical variable encoding
-6. Train-test split
-7. Model development
-8. Model evaluation
-9. Model comparison
-10. Business recommendations
-
----
-
-## Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Scikit-learn
-* Jupyter Notebook
-
----
 
 ## Machine Learning Models
 
@@ -101,9 +71,9 @@ The following classification models were developed and evaluated:
 
 ## Model Selection
 
-Logistic Regression was selected as the final model because it achieved the highest overall predictive performance.
+The reason behind the selection of the Logistic Regression model was its superior performance in predicting the target class.
 
-Compared with Random Forest, it produced:
+When compared to the Random Forest model, it performed better in terms of:
 
 * Higher Accuracy
 * Higher ROC-AUC
@@ -111,46 +81,39 @@ Compared with Random Forest, it produced:
 * Higher Recall
 * Higher F1-score
 
-In addition, Logistic Regression provides interpretable coefficients that help explain which factors contribute most to customer churn, making it useful for business decision-making.
-
----
+Moreover, the logistic regression model gives interpretable coefficients that allow understanding which factors influence the customer churn.
 
 ## Key Business Insights
 
-The exploratory data analysis identified several important factors associated with customer churn:
+Some of the key determinants that emerged from the exploratory data analysis include the following:
 
-* Customers on month-to-month contracts were significantly more likely to churn than those on longer-term contracts.
-* Customers with fiber optic internet services exhibited higher churn rates.
-* Customers with shorter tenure were more likely to leave.
-* Higher monthly charges were associated with increased churn.
-* Senior citizens showed a higher likelihood of churning than non-senior customers.
+* Customers with month-to-month plans had higher levels of churn compared to those with long-term plans.
+* Fiber internet plan customers had higher churn.
+* Shorter tenure was a predictor of churn.
+* More charges per month predicted higher churn.
+* Senior citizens had a higher rate of churn compared to non-senior customers.
 
----
 
 ## Business Recommendations
 
-Based on the findings, the telecommunications company should consider:
+From the research findings, the telecommunication company can be advised to:
 
-* Offering incentives for customers to migrate from month-to-month contracts to long-term contracts.
-* Developing targeted retention campaigns for high-risk customers.
-* Monitoring customers with high monthly charges.
-* Improving customer support for customers identified as high churn risks.
-* Using predictive analytics to proactively identify customers requiring retention interventions.
-
----
+* Provide incentives for switching customers from their monthly contracts to long-term contracts.
+* Initiate retention strategies for at-risk customers.
+* Keep track of customers paying high monthly rates.
+* Provide adequate customer service to high-risk customers.
+* Use predictive analytics to identify at-risk customers.
 
 ## Future Improvements
 
-Future work may include:
+Future work could include:
 
-* Hyperparameter tuning
+* Hyperparameter optimization
 * Cross-validation
 * Feature selection
-* Testing additional machine learning algorithms such as XGBoost, LightGBM, CatBoost, and Support Vector Machines
-* Model deployment using Flask, FastAPI, or Streamlit
-* Building an interactive Power BI dashboard
-
----
+* Application of other machine learning models like XGBoost, LightGBM, CatBoost, and SVM
+* Deployment of the model using Flask, FastAPI, or Streamlit framework
+* Development of Power BI dashboard
 
 ## Author
 
