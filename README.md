@@ -7,12 +7,11 @@ Churn is among the major problems that confront subscription-oriented companies.
 In this project, we design a machine learning model aimed at predicting the probability of churn of a telecommunications customer through various factors such as demographics of the customer, subscriptions, contracts, and billing. The entire process of data science will be covered, including data preprocessing and exploratory data analysis (EDA).
 
 
-## Business Problem
+## Business Problem📄
 
 The main objective of this project is to identify customers who are likely to discontinue their services so that the company can implement targeted customer retention strategies.
 
-
-## Dataset
+## 📈Dataset
 
 **Dataset:** IBM Telco Customer Churn Dataset
 
@@ -37,8 +36,6 @@ The following classification models were developed and evaluated:
 
 * Logistic Regression
 * Random Forest Classifier
-
----
 
 ## Model Performance
 
@@ -67,7 +64,6 @@ The following classification models were developed and evaluated:
 | F1-score  |    57% |
 | ROC-AUC   | 0.8215 |
 
----
 
 ## Model Selection
 
